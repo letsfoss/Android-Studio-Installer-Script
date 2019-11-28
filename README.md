@@ -13,6 +13,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 🐧 Linux Mint Also Works on Ubuntu
 
 <hr>
+
 ### Features
 
 ✅ Install JDK, Android Studio <br>
