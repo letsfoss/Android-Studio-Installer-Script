@@ -9,6 +9,9 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 <hr>
 
+### Current Android Studio Version
+#### 3.5.2.0 on 29/Nov/2019
+
 ### Tested On
 🐧 Linux Mint Also Works on Ubuntu
 
@@ -24,19 +27,20 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 ### Installation
 
-- Clone the Repo
+- Clone the Repo <br>
 
-`git clone https://github.com/letsfoss/Android-Studio-Installer-Script.git`
+```git clone https://github.com/letsfoss/Android-Studio-Installer-Script.git```
 
-- cd into the Directory 
-`cd Android-Studio-Installer-Script/`
+- cd into the Directory <br>
 
-- Make it as Executable
+```cd Android-Studio-Installer-Script/```
 
-`chmod +x StudioInstaller.sh`
+- Make it as Executable <br>
 
-- Now, Run the Script
-`./StudioInstaller.sh`
+```chmod +x StudioInstaller.sh```
+
+- Now, Run the Script <br>
+```./StudioInstaller.sh```
 
 Once the Installation is Complete, You'll see a Message **Installing Finished**
 Open your Launcher and Check for Android Studio
