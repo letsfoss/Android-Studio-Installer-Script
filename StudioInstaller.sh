@@ -21,6 +21,12 @@ DownloadAndroidStudio (){
 	wget "https://dl.google.com/dl/android/studio/ide-zips/3.5.2.0/android-studio-ide-191.5977832-linux.tar.gz"
 }
 
+# Install Fastboot & ADB Tools
+FastbootADB (){
+	sudo apt install android-tools-adb android-tools-fastboot
+}
+
+# Install Android Studio
 InstallAndroidStudio (){
 	echo "Installing Android Studio"
 	sudo tar -xzf android-studio-ide-191.5977832-linux.tar.gz -C /opt
@@ -41,11 +47,10 @@ InstallAndroidStudio (){
 
     chmod +x "$HOME"/.local/share/applications/android-studio.desktop
 
-
-
 	echo "Installing Finished"
 }
 
 JDKInstall
 DownloadAndroidStudio
 InstallAndroidStudio
+FastbootADB
