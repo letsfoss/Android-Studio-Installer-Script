@@ -39,7 +39,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 ```chmod +x StudioInstaller.sh```
 
--Run it
+- Run it
 
 ```./StudioInstaller.sh```
 
