@@ -13,9 +13,9 @@ Shell script to Install JDK8, Android Studio also create Launcher
 #### 3.5.2.0 on 29/Nov/2019
 
 ### Tested & Works On
-🐧 Linux Mint
-🐧 ElementaryOS Juno
-🐧 Ubuntu
+🐧 Linux Mint <br>
+🐧 ElementaryOS Juno <br>
+🐧 Ubuntu <br>
 
 <hr>
 
@@ -39,7 +39,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 ```chmod +x StudioInstaller.sh```
 
--Run it
+- Run it
 
 ```./StudioInstaller.sh```
 
