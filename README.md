@@ -27,20 +27,30 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 ### Installation
 
+#### Recommended Installation Method
+
+- Download the File
+
+```curl -o StudioInstaller.sh https://raw.githubusercontent.com/letsfoss/Android-Studio-Installer-Script/master/StudioInstaller.sh```
+
+- Make it as Executable
+
+```chmod +x StudioInstaller.sh```
+
+-Run it
+
+```./StudioInstaller.sh```
+
+> Once the Installation is Complete, You'll see a Message **Installing Finished**
+> Open your Launcher and Check for Android Studio
+
+#### For Development
+
 - Clone the Repo <br>
 
 ```git clone https://github.com/letsfoss/Android-Studio-Installer-Script.git```
 
-- cd into the Directory <br>
 
-```cd Android-Studio-Installer-Script/```
+- Make Changes <br>
 
-- Make it as Executable <br>
-
-```chmod +x StudioInstaller.sh```
-
-- Now, Run the Script <br>
-```./StudioInstaller.sh```
-
-Once the Installation is Complete, You'll see a Message **Installing Finished**
-Open your Launcher and Check for Android Studio
+- Send Pull Request
