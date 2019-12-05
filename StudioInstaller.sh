@@ -8,27 +8,37 @@
 # Install JDK8
 JDKInstall (){
 	printf "Installing JDK8\n"
-	sudo apt-get install python-software-properties -y
-	sudo add-apt-repository ppa:webupd8team/java -y
-	sudo apt-get update -y
-	sudo apt-get install oracle-java8-installer -y
-	export JAVA_HOME=$(update-alternatives --query javac | sed -n -e 's/Best: *\(.*\)\/bin\/javac/\1/p')
+	printf "\n Enter your Password then Sit back and Relax\n"
+	sudo apt update -y
+	sudo apt install openjdk-8-jdk openjdk-8-jre -y
+	printf "\n Setting Java Path Variable\n"
+	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+	printf "\n Testing JAVA_HOME Path\n"
+	echo $JAVA_HOME
+	printf "\n Adding JAVA bin directory to the PATH variable\n"
+	export PATH=$PATH:$JAVA_HOME/bin
+	printf "\n Testing PATH Variable\n"
+	echo $PATH
+	printf "\n Testing Java Installation\n"
+	java -version
 }
 
 # Download Android Studio
 DownloadAndroidStudio (){
-	echo "Downloading Android Studio"
+	echo "\n Downloading Android Studio \n"
 	wget "https://dl.google.com/dl/android/studio/ide-zips/3.5.2.0/android-studio-ide-191.5977832-linux.tar.gz"
 }
 
 # Install Fastboot & ADB Tools
 FastbootADB (){
-	sudo apt install android-tools-adb android-tools-fastboot
+	printf "\n Install ADB Tools \n"
+	sudo apt install android-tools-adb android-tools-fastboot -y
+	printf "\n Done installing ADB Tools"
 }
 
 # Install Android Studio
 InstallAndroidStudio (){
-	echo "Installing Android Studio"
+	echo "\n Installing Android Studio \n"
 	sudo tar -xzf android-studio-ide-191.5977832-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
@@ -47,10 +57,10 @@ InstallAndroidStudio (){
 
     chmod +x "$HOME"/.local/share/applications/android-studio.desktop
 
-	echo "Installing Finished"
+	echo "\n Installing Finished \n"
 }
 
 JDKInstall
+FastbootADB
 DownloadAndroidStudio
 InstallAndroidStudio
-FastbootADB
