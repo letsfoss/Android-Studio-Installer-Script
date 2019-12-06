@@ -15,8 +15,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 ### Tested & Works On
 🐧 Linux Mint <br>
 🐧 Ubuntu <br>
-
-❌ ElementaryOS Juno <br>
+🐧 ElementaryOS Hera 5.1 <br>
 
 <hr>
 
