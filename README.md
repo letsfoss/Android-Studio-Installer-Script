@@ -10,7 +10,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 <hr>
 
 ### Current Android Studio Version
-#### 3.5.2.0 on 29/Nov/2019
+#### 4.1.0.19 on 09/Nov/2020
 
 ### Tested & Works On
 🐧 Linux Mint <br>
