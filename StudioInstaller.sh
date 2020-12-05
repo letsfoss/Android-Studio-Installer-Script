@@ -39,7 +39,7 @@ FastbootADB (){
 # Install Android Studio
 InstallAndroidStudio (){
 	echo "\n Installing Android Studio \n"
-	sudo tar -xzf android-studio-ide-191.5977832-linux.tar.gz -C /opt
+	sudo tar -xzf android-studio-ide-201.6953283-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
 	cat > "$HOME"/.local/share/applications/android-studio.desktop <<-EOF
