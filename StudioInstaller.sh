@@ -26,7 +26,7 @@ JDKInstall (){
 # Download Android Studio
 DownloadAndroidStudio (){
 	echo "\n Downloading Android Studio \n"
-	wget "https://dl.google.com/dl/android/studio/ide-zips/4.1.0.19/android-studio-ide-201.6858069-linux.tar.gz"
+	wget "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz"
 }
 
 # Install Fastboot & ADB Tools
