@@ -58,6 +58,8 @@ InstallAndroidStudio (){
     chmod +x "$HOME"/.local/share/applications/android-studio.desktop
 
 	echo "\n Installing Finished \n"
+	rm -rf android-studio*
+	rm -rf StudioInstaller.sh
 }
 
 JDKInstall
