@@ -3,7 +3,7 @@
 # Author: Let's FOSS
 # Shell Script for Installing JDK, Android Studio & Creating Desktop Icon
 # Github: https://github.com/letsfoss/Android-Studio-Installer-Script
-# Android Studio Version: 3.5.2.0 on 28/11/2019
+# Android Studio Version: 4.1.2 on 25/01/2021
 
 # Install JDK8
 JDKInstall (){
@@ -26,7 +26,7 @@ JDKInstall (){
 # Download Android Studio
 DownloadAndroidStudio (){
 	echo "\n Downloading Android Studio \n"
-	wget -c "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz"
+	wget -c "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.2.0/android-studio-ide-201.7042882-linux.tar.gz"
 }
 
 # Install Fastboot & ADB Tools
@@ -39,12 +39,12 @@ FastbootADB (){
 # Install Android Studio
 InstallAndroidStudio (){
 	echo "\n Installing Android Studio \n"
-	sudo tar -xzf android-studio-ide-201.6953283-linux.tar.gz -C /opt
+	sudo tar -xzf android-studio-ide-201.7042882-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
 	cat > "$HOME"/.local/share/applications/android-studio.desktop <<-EOF
 		[Desktop Entry]
-		Version=3.5.2
+		Version=4.1.2
 		Type=Application
 		Name=Android Studio
 		Exec="/opt/android-studio/bin/studio.sh" %f
