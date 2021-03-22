@@ -26,7 +26,7 @@ JDKInstall (){
 # Download Android Studio
 DownloadAndroidStudio (){
 	echo "\n Downloading Android Studio \n"
-	wget -c "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.2.0/android-studio-ide-201.7042882-linux.tar.gz"
+	wget -c "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.3.0/android-studio-ide-201.7199119-linux.tar.gz"
 }
 
 # Install Fastboot & ADB Tools
@@ -39,12 +39,12 @@ FastbootADB (){
 # Install Android Studio
 InstallAndroidStudio (){
 	echo "\n Installing Android Studio \n"
-	sudo tar -xzf android-studio-ide-201.7042882-linux.tar.gz -C /opt
+	sudo tar -xzf android-studio-ide-201.7199119-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
 	cat > "$HOME"/.local/share/applications/android-studio.desktop <<-EOF
 		[Desktop Entry]
-		Version=4.1.2
+		Version=4.1.3
 		Type=Application
 		Name=Android Studio
 		Exec="/opt/android-studio/bin/studio.sh" %f
