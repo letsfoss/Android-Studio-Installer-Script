@@ -32,14 +32,14 @@ DownloadAndroidStudio (){
 # Install Fastboot & ADB Tools
 FastbootADB (){
 	printf "\n Install ADB Tools \n"
-	sudo apt install android-tools-adb android-tools-fastboot -y
+	apt install android-tools-adb android-tools-fastboot -y
 	printf "\n Done installing ADB Tools"
 }
 
 # Install Android Studio
 InstallAndroidStudio (){
 	echo "\n Installing Android Studio \n"
-	sudo tar -xzf android-studio-ide-201.7199119-linux.tar.gz -C /opt
+	tar -xzf android-studio-ide-201.7199119-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
 	cat > "$HOME"/.local/share/applications/android-studio.desktop <<-EOF
