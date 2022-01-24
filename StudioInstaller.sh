@@ -9,8 +9,8 @@
 JDKInstall (){
 	printf "Installing JDK8\n"
 	printf "\n Enter your Password then Sit back and Relax\n"
-	sudo apt update -y
-	sudo apt install openjdk-8-jdk openjdk-8-jre -y
+	apt update -y
+	apt install openjdk-8-jdk openjdk-8-jre -y
 	printf "\n Setting Java Path Variable\n"
 	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 	printf "\n Testing JAVA_HOME Path\n"
