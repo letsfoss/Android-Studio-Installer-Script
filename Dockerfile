@@ -3,4 +3,4 @@ COPY . /tmp
 
 WORKDIR /tmp
 RUN apt update && apt install wget
-RUN ./
+RUN ./StudioInstaller.sh
