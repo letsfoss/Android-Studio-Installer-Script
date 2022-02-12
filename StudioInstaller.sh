@@ -39,12 +39,12 @@ FastbootADB (){
 # Install Android Studio
 InstallAndroidStudio (){
 	echo "\n Installing Android Studio \n"
-	tar -xzf android-studio-ide-201.7199119-linux.tar.gz -C /opt
+	tar -xzf android-studio-2021.1.1.21-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
 	cat > "$HOME"/.local/share/applications/android-studio.desktop <<-EOF
 		[Desktop Entry]
-		Version=4.1.3
+		Version=2021.1.1.21
 		Type=Application
 		Name=Android Studio
 		Exec="/opt/android-studio/bin/studio.sh" %f
