@@ -1,29 +1,24 @@
 # Android-Studio-Installer-Script
 Shell script to Install JDK8, Android Studio also create Launcher
 
+
+### 🧬 Current Android Studio Version
+#### Bumblebee 2021.1.1 Patch 1 on 12/Feb/2022
+
+![Docker Image CI](https://github.com/letsfoss/Android-Studio-Installer-Script/workflows/Docker%20Image%20CI/badge.svg)
+
 ![](https://repository-images.githubusercontent.com/224660267/46852c00-1214-11ea-9e08-92d63b74c92f)
 ### Features
 ✅ Install JDK, Android Studio <br>
-✅ Creates Desktop Shortcut
-
+✅ Creates Desktop Shortcut <br>
+✅ Docker Support
 
 <hr>
-
-### Current Android Studio Version
-#### 4.1.0.19 on 09/Nov/2020
 
 ### Tested & Works On
 🐧 Linux Mint <br>
 🐧 Ubuntu <br>
 🐧 ElementaryOS Hera 5.1 <br>
-
-<hr>
-
-### Features
-
-✅ Install JDK, Android Studio <br>
-✅ Creates Desktop Shortcut
-
 
 <hr>
 
