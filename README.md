@@ -3,7 +3,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 
 ### 🧬 Current Android Studio Version
-#### Bumblebee 2021.1.1 Patch 1 on 12/Feb/2022
+#### Dolphin 2021.3.1 Patch 1 for Linux on 13/Dec/2022
 
 ![Docker Image CI](https://github.com/letsfoss/Android-Studio-Installer-Script/workflows/Docker%20Image%20CI/badge.svg)
 
@@ -36,7 +36,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 - Run it
 
-```./StudioInstaller.sh```
+```sudo ./StudioInstaller.sh```
 
 > Once the Installation is Complete, You'll see a Message **Installing Finished**
 > Open your Launcher and Check for Android Studio
