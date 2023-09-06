@@ -6,7 +6,7 @@
 # Android Studio Version: Dolphin 2021.3.1 Patch 1 for Linux on 13/12/2022
 
 # Install JDK8
-JDKInstall (){
+JDKInstall() {
 	printf "Installing JDK8\n"
 	printf "\n Enter your Password then Sit back and Relax\n"
 	apt update -y
@@ -24,25 +24,25 @@ JDKInstall (){
 }
 
 # Download Android Studio
-DownloadAndroidStudio (){
+DownloadAndroidStudio() {
 	echo "\n Downloading Android Studio \n"
-	wget -c "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2021.3.1.17/android-studio-2021.3.1.17-linux.tar.gz"
+	wget -c "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.19/android-studio-2022.3.1.19-linux.tar.gz"
 }
 
 # Install Fastboot & ADB Tools
-FastbootADB (){
+FastbootADB() {
 	printf "\n Install ADB Tools \n"
 	apt install android-tools-adb android-tools-fastboot -y
 	printf "\n Done installing ADB Tools"
 }
 
 # Install Android Studio
-InstallAndroidStudio (){
+InstallAndroidStudio() {
 	echo "\n Installing Android Studio \n"
-	tar -xzf android-studio-2021.3.1.17-linux.tar.gz -C /opt
+	tar -xzf android-studio-2022.3.1.19-linux.tar.gz -C /opt
 
 	mkdir -p "$HOME"/.local/share/applications
-	cat > "$HOME"/.local/share/applications/android-studio.desktop <<-EOF
+	cat >"$HOME"/.local/share/applications/android-studio.desktop <<-EOF
 		[Desktop Entry]
 		Version=2021.3.1.17
 		Type=Application
@@ -55,7 +55,7 @@ InstallAndroidStudio (){
 		StartupWMClass=android-studio
 	EOF
 
-    chmod +x "$HOME"/.local/share/applications/android-studio.desktop
+	chmod +x "$HOME"/.local/share/applications/android-studio.desktop
 
 	echo "\n Installing Finished \n"
 	rm -rf android-studio*
