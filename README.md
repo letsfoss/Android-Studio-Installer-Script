@@ -3,7 +3,7 @@ Shell script to Install JDK8, Android Studio also create Launcher
 
 
 ### 🧬 Current Android Studio Version
-#### Dolphin 2021.3.1 Patch 1 for Linux on 13/Dec/2022
+#### Giraffe 2021.3.1.17 for Linux on 06/Sep/2023
 
 ![Docker Image CI](https://github.com/letsfoss/Android-Studio-Installer-Script/workflows/Docker%20Image%20CI/badge.svg)
 
